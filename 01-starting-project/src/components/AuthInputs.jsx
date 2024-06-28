@@ -1,7 +1,7 @@
 import { useState } from 'react';
  import {styled} from 'styled-components';
 import Button from './Button';
-import  Input from './input';
+import Input from './input';
 
  const controldiv = styled.div`
   display: flex;
@@ -38,7 +38,7 @@ export default function AuthInputs() {
           <Input
           label="Email"
           invalid={emailNotValid}
-            type="email"
+          type="email"
             // className={emailNotValid ? 'invalid' : undefined}
             onChange={(event) => handleInputChange('email', event.target.value)}
           />

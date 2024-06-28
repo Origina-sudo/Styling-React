@@ -21,9 +21,10 @@ width: 100%;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 `
 export default function CustomInput({label,invalid ,...props}){
-return<p>
+return (
+    <p>
     <Label $invalid={invalid}>{label}</Label>
-    <input $invalid={invalid} {...props} />
+    <Input $invalid={invalid} {...props} />
 </p>
-
+);
 }
